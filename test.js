@@ -20,8 +20,13 @@ let big = 99
 ga= (input) => {  
 
   if (input <= 0){
-    document.querySelector("h2").textContent = "Error! put a bigger number than 0"
+    document.querySelector("h2").textContent = "Error! put a bigger number than 0 "
   }
+  else if(input == small || input == big){
+    document.querySelector("h2").textContent = "Error! dont put in the same number: " + small + " , " + big
+
+  }
+
   else if(input >= 100){
     document.querySelector("h2").textContent = "Error! put a smaller number than 100"
   }
